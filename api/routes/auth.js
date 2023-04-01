@@ -19,7 +19,7 @@ router.post("/register",async (req,res) => {
                 if(err) {
                     console.log(err);
                     console.log("Error while registering");
-                    res.status(404).json("Oops!!");
+                    res.status(404).json("User alreay exists!!");
                 }else{
                     console.log("Registered successfully");
                     res.status(200).json("Done");
